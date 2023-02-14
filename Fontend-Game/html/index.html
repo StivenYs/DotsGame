@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+
+  <header>
+      <div> <img src="./../image/Logoo.png"  width="50px" alt="logo"></div>
+  </header>
+  
+  <main>
+      <div>
+          <p id="err"></p>
+      </div>
+      <form action="Game.html" id="formLogin" >
+          <div class="sectionForm">
+              <label for="name">Enter your nickname</label>
+              <input type="text" id="nick" value="@" readonly>
+              <input type="text" id="name" required minlength="4">
+          </div>
+          <div class="sectionForm" id="emailInput">
+              <label for="email">Enter your email</label>
+              <input type="email" id="email" placeholder="yYa@email.com">
+          </div>
+          <div class="sectionForm">
+              <label for="gameSize">Game size</label>
+              <select name="gameSize" id="gameSize" >
+                  <option value="0">Please choose an option</option>
+                  <option value="3">3x3</option>
+                  <option value="4">4x4</option>
+                  <option value="5">5x5</option>
+                  <option value="6">6x6</option>
+              </select>
+          </div>
+          
+          <div id="sectionFormAvatar">
+             
+              <div id="avatarSection">
+                  <label for="avatarImage">avatar</label>
+                  <div id="avatarContainer"><img id="avatarImage" src="./../image/avatar1.png" alt="avatar" ></div>
+              </div>
+              <div id="avatarGrid">
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar2.png" alt="avatar2"></div>
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar1.png" alt="avatar1"></div>
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar3.png" alt="avatar3"></div>
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar4.png" alt="avatar4"></div>
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar5.png" alt="avatar5"></div>
+                  <div class="itemContainer"><img class="imageItemAvatar" src="./../image/avatar6.png" alt="avatar6"></div>
+              </div>
+          </div>
+          
+          <div class="sectionForm">
+              <input type="submit" value="Play" id="play" >
+          </div>
+      </form>
+  </main>
+  
+  <footer>
+    <p>MiniGame with html, css and js</p>
+  </footer>
+  
+  <script src="./../js/User.Data.js"></script>
+  <script src="./../js/Handler.js"></script>
+
+</body>
+</html>

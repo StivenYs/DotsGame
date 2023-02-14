@@ -1,0 +1,150 @@
+﻿body{
+    background-color: #F0F1F2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+input{
+    height: 28px;
+    border: 1px solid #CED4DA;
+    border-radius: 6px;
+    width: 200px;
+    outline: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: 15% auto 0px auto;
+   
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+    gap: 80px;
+    flex-wrap: wrap-reverse;
+}
+footer{
+    margin-top: 30px;
+    text-align: center;
+    color: #CED4DA;
+}
+/*clas and id*/
+
+/*table game*/
+#gameContainer{
+    display: grid;
+}
+#gridContainer{
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    background-color: white;
+    border-radius: 11px 11px 0px 0px;
+    border: 1px solid  #CED4DA;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 376px;
+    height: 376px;
+}
+/*endGame*/
+#EndGame{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background-color: #263238;
+    width: 378px;
+    height: 377px;
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 1px solid #CED4DA;
+    justify-content: center;
+    align-items: center;
+}
+
+#EndGame button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#EndGame button:hover{
+    background-color: #CED4DA;
+    color: white;
+}
+
+
+
+/*.//..*/
+
+
+
+
+
+.itemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 4px;
+    
+}
+.item{
+    background-color: goldenrod;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.yellow{
+    background-color: #DAA520;
+    transition: background-color 1s;
+}
+.blue{
+    background-color: dodgerblue;
+    transition: background-color 1s;
+}
+/*info table */
+#infoDown{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #263238;
+    color: white;
+    align-items: center;
+    border-radius: 0px 0px 11px 11px;
+    margin-top: 378px;
+    width: 378px;   
+}
+#infoDown img{
+  padding-left: 9px;
+}
+/*info bar*/
+.sectionForm{
+    margin-bottom: 15px;
+}
+#infoBar{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+#avatarNick{
+    background: #CED4DA;
+    border-radius: 0px 6px 6px 0px;
+    width: 174px;
+}
+#containerAvatar{
+    display: flex;
+    width: 30px;
+    height: 32px;
+    border-radius: 6px 0px 0px 6px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    float: left;
+   
+}
+

@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../css/styleGame.css">
+    <title>Game</title>
+</head>
+<body>
+  <main>
+      <section>
+          
+          <div id="gameContainer">
+              <div id="gridContainer">
+                 <div class="itemContainer"><div class="item"></div></div>
+              </div>
+              <div id="EndGame">
+                  <button id="newGame">new Game</button>
+              </div>
+              <div id="infoDown">
+                  <img src="./../image/Logoo.png" alt="" width="40px">
+                  <h2>STIVENDOTS</h2>
+              </div>
+          </div>
+          
+          <div id="infoBar">
+              <div class="sectionForm">
+                  <div id="containerAvatar"><img id="avatarImg" src="./../image/avatar1.png" alt="" width="20px">  </div>
+                  <input type="text" id="avatarNick" value="nick" required minlength="4" readonly >
+              </div>
+              <div class="sectionForm">
+                  <label for="points">Puntuación</label>
+                  <input type="text" id="points"  value="0" readonly>
+              </div>
+              <div class="sectionForm">
+                  <label for="time">Tiempo restante</label>
+                  <input type="text" id="time" value="30" readonly>
+              </div>
+          </div>
+      </section>
+  </main>
+  <footer>
+      <p>MiniGame with html, css and js</p>
+  </footer>
+  <script src="./../js/User.Data.js"></script>
+  <script src="./../js/Game.js"></script>
+
+
+</body>
+</html>
